@@ -1,0 +1,18 @@
+/* minimal styling */
+body { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; }
+.app-root { height:100vh; display:flex; align-items:center; justify-content:center; }
+.login-modal { width:420px; padding:20px; border-radius:8px; box-shadow:0 6px 30px rgba(0,0,0,.12); }
+.login-modal input { display:block; width:100%; padding:8px; margin:8px 0 12px; }
+.login-modal button { padding:8px 14px }
+.layout { display:flex; width:95vw; height:90vh; gap:12px; }
+.video-col { flex: 2; display:flex; flex-direction:column; gap:12px }
+.aside-col { width:380px; display:flex; flex-direction:column; gap:12px }
+.iframe-wrap { flex:1; background:#000; border-radius:8px; overflow:hidden }
+.iframe-wrap iframe { width:100%; height:100%; border:0 }
+.participants { background:#fff; padding:8px; border-radius:8px }
+.chat { background:#fff; padding:8px; border-radius:8px; display:flex; flex-direction:column; gap:8px; }
+.messages { flex:1; overflow:auto; max-height:40vh; padding:6px; border:1px solid #eee }
+.chat-input { display:flex; gap:8px }
+.chat-input input { flex:1 }
+.voice { background:#fff; padding:8px; border-radius:8px }
+.hint { color:#666; font-size:12px }
