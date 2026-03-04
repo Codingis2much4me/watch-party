@@ -1,0 +1,15 @@
+{
+  "name": "watch-party",
+  "version": "1.0.0",
+  "description": "Watch party cricket app with real-time chat and voice",
+  "private": true,
+  "scripts": {
+    "install-deps": "npm install --prefix server && npm install --prefix client",
+    "build": "npm run build --prefix client",
+    "start": "node server/index.js",
+    "dev": "concurrently \"npm start\" \"npm run dev --prefix client\""
+  },
+  "engines": {
+    "node": "18.x"
+  }
+}
