@@ -68,7 +68,7 @@ io.on('connection', (socket) => {
 });
 
 // Serve index.html for any non-API route (React Router)
-app.get('/*', (req, res) => {
+app.use((req, res) => {
   res.sendFile(path.join(__dirname, '../client/dist/index.html'));
 });
 
